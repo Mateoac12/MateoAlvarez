@@ -44,12 +44,12 @@
     <header id="header" style="margin-top: 100px;">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 my-auto">
                     <div class="header-content-left">
-                        <img src="#" alt="" style="width: 100%;">
+                        <img src="img/LogoPersonal.png" style="width: 250px;" class="rounded mx-auto d-block">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 my-auto">
                     <div class="header-content-right">
                        <h1 class="display-4">Mateo Álvarez</h1>
                        <p class="mt-3">
@@ -64,13 +64,13 @@
         </div>
 
         <!-- PROYECTOS -->
-        <div id="proyectos" class="mt-5">
+        <div class="mt-5 bg">
             <div class="container">
                 <hr>
                 <div class="row mt-5">
                     <div class="col-md-6"> </div>
                     <div class="col-md-6">
-                        <h2 class="display-4">Proyectos</h2>
+                        <h2 class="display-4" id="proyectos">Proyectos</h2>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -90,7 +90,7 @@
                     </div>
                     <div class="col-md-6 my-auto">
                         <div class="project-content-right">
-                            <img src="img/MascotasPerdidasLogo.png" style="width: 300px;" class="rounded mx-auto d-block">
+                            <img src="img/MascotasPerdidasLogo.png" style="width: 300px;" class="mx-auto d-block">
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-md-6 my-auto">
                         <div class="project-content-right">
-                            <img src="img/HolaSuerteLogo.png" style="width: 300px;" class="rounded mx-auto d-block">
+                            <img src="img/HolaSuerteLogo.png" style="width: 300px;" class="mx-auto d-block">
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="col-md-6 my-auto">
                         <div class="project-content-right">
-                            <img src="#" alt="" class="rounded mx-auto d-block">
+                            <img src="img/ImageLedRideLogo.png" style="width: 300px;" class="mx-auto d-block">
                         </div>
                     </div>
                 </div>
@@ -234,19 +234,25 @@
                     <div class="col-md-4 mt-5">
                         <h3>LinkedIn</h3>
                         <p class="text-muted">Mateo Álvarez</p>
-                        <img style="width: 80%;" src="img/linkedin.png">
+                        <div class="contacto-content-qr">
+                            <img style="width: 80%;" src="img/linkedin.png">
+                        </div>
                         <a href="https://www.linkedin.com/in/mateo-%C3%A1lvarez-731313188/" target="_blank" class="btn btn-outline-secondary">Link aqui</a>
                     </div>
                     <div class="col-md-4 mt-5">
                         <h3>GitHub</h3>
                         <p class="text-muted">Mateoac12</p>
-                        <img style="width: 80%;" src="img/github.png" alt="">
+                        <div class="contacto-content-qr">
+                            <img style="width: 80%;" src="img/github.png" alt="">
+                        </div>
                         <a href="https://github.com/Mateoac12" target="_blank" class="btn btn-outline-secondary">Link aqui</a>
                     </div>
                     <div class="col-md-4 mt-5">
                         <h3>Email</h3>
                         <p class="text-muted">alvarez.fing@gmail.com</p>
-                        <img style="width: 80%;" src="img/email.png" alt="">
+                        <div class="contacto-content-qr">
+                            <img style="width: 80%;" src="img/email.png" alt="">
+                        </div>
                         <a href="mailto:alvarez.fing@gmail.com" target="_blank" class="btn btn-outline-secondary">Link aqui</a>
                     </div>
                 </div>
@@ -265,5 +271,51 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script>
+        ScrollReveal().reveal('.navbar', {
+            duration: 2000,
+            distance: '150%',
+            origin: 'top',
+        });
+        ScrollReveal().reveal('.header-content-left', {
+            delay: 750,
+            duration: 2000,
+            distance: '150%',
+            origin: 'left'
+        })
+        ScrollReveal().reveal('.header-content-right', {
+            duration: 2000,
+            distance: '150%',
+            origin: 'bottom'
+        })
+        ScrollReveal().reveal('.project-content-left', {
+            duration: 2000,
+            origin: 'left',
+            distance: '150%'
+        })
+        ScrollReveal().reveal('.project-content-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '150%'
+        })
+        ScrollReveal().reveal('.experience-right-content', {
+            duration: 2000,
+            origin: 'right',
+            distance: '150%'
+        })
+        ScrollReveal().reveal('.experience-left-content', {
+            duration: 2000,
+            origin: 'left',
+            distance: '150%'
+        })
+        ScrollReveal().reveal('.contacto-content-qr', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '150%'
+        })
+
+    </script>
+
 </body>
 </html>
