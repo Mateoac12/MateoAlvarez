@@ -1,16 +1,3 @@
-//Smooth Scrolling
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-
 //ScrollReveal
 
 ScrollReveal().reveal('.navbar', {
@@ -66,3 +53,15 @@ ScrollReveal().reveal('#contacto', {
     duration: 3000,
     delay: 750
 })
+
+//Smooth Scrolling
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
